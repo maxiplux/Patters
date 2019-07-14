@@ -1,4 +1,6 @@
-package observer.generics;
+package observer;
+
+import observer.generics.Observer;
 
 public class ObserverB implements Observer {
 

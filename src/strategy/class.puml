@@ -1,0 +1,28 @@
+@startuml
+
+title Classes - Class Diagram
+
+
+  interface ShapeStrategy {
+
+    public  void draw();
+}
+  interface ContextStragtegy {
+    public void setStrategy(ShapeStrategy strategy);
+
+    public   void  draw();
+}
+
+
+ShapeStrategy <|-- Circle
+ShapeStrategy <|-- Line
+ShapeStrategy <|-- Reactanle
+ShapeStrategy <|-- Circle
+
+ContextStragtegy <|-- ContextStragtegyImpl
+
+ContextStragtegy <-- Aplication
+ShapeStrategy <-- Aplication
+
+
+@enduml

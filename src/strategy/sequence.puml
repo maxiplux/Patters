@@ -1,0 +1,23 @@
+@startuml
+
+title "Messages - Sequence Diagram"
+
+ actor JuanMosquera #red
+
+Application -> ContextStragtegyImpl:1 : (new Line())
+ContextStragtegyImpl -> Line : 1.1 new()
+ContextStragtegyImpl -> ContextStragtegyImpl:1.1 : draw()
+ContextStragtegyImpl <-- Line:1.1.1 : draw()
+
+ContextStragtegyImpl -> ContextStragtegyImpl:2.0 : setStrategy(new Circle())
+ContextStragtegyImpl -> Circle:2.1 : new()
+ContextStragtegyImpl <-- Circle:2.1.1 : draw()
+
+
+ContextStragtegyImpl -> ContextStragtegyImpl:2.0 : setStrategy(new Reactanle())
+ContextStragtegyImpl -> Reactanle:2.1 : new()
+ContextStragtegyImpl <-- Reactanle:2.1.1 : draw()
+
+
+
+@enduml

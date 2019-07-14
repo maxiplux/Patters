@@ -1,6 +1,8 @@
-package observer.generics;
+package observer;
 
-public class ObserverA implements Observer  {
+import observer.generics.Observer;
+
+public class ObserverA implements Observer {
 
     @Override
     public void notify(String change, Object source) {

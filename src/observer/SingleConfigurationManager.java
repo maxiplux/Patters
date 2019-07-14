@@ -1,10 +1,6 @@
 package observer;
 
-import lombok.Data;
 import observer.generics.AbstractObservable;
-import observer.generics.Observable;
-import observer.generics.ObserverA;
-import observer.generics.ObserverB;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
